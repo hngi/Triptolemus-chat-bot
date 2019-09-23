@@ -14,7 +14,7 @@
         android:background="@drawable/chatbot_bubble_chat"
         android:fontFamily="@font/poppins"
         android:padding="8dp"
-        android:textColor="@color/white"
+        android:textColor="@color/secondTextColor"
         android:text="Hello"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
