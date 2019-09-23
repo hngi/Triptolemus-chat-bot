@@ -5,5 +5,9 @@
     <color name="colorAccent">#D81B60</color>
     <color name="white">#fff</color>
     <color name="mainTextColor">#0D9F67</color>
+<<<<<<< HEAD
     <color name="meChat">#ECECEC</color>
+=======
+    <color name="secondTextColor">#373737</color>
+>>>>>>> upstream/develop
 </resources>

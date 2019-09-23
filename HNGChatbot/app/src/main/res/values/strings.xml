@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">HNGChatbot</string>
     <string name="triptochat">TriptoChat</string>
+    <string name="welcome_homescreen_msg">Hi, welcome to TripToChat, what do you want us to call you?</string>
+    <string name="text_hint">David</string>
+    <string name="start_button_text">start chatting</string>
 </resources>
