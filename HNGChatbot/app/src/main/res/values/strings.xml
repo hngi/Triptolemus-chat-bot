@@ -5,4 +5,7 @@
     <string name="text_hint">David</string>
     <string name="start_button_text">start chatting</string>
     <string name="msg_box_hint">Write a message...</string>
+    <string name="user_msg">User message</string>
+    <string name="bot_msg">Bot message</string>
+    <string name="timestamp_msg">12:00 am</string>
 </resources>
