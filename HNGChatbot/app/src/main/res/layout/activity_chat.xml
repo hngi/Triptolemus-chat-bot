@@ -25,11 +25,11 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/ic_send"
+        android:background="@drawable/ic_send_icon"
         app:layout_constraintBottom_toBottomOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -41,6 +41,8 @@
         android:id="@+id/titleBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/bg_toolbar"
+        android:elevation="4dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,14 +68,14 @@
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:layout_marginStart="32dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-            app:layout_constraintStart_toEndOf="@+id/imageView3"
-            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintBottom_toBottomOf="@id/backButton"
+            app:layout_constraintStart_toEndOf="@id/backButton"
+            app:layout_constraintTop_toTopOf="@id/backButton"
             app:srcCompat="@drawable/ic_icon"
             tools:ignore="ContentDescription" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/backButton"
             android:layout_width="36dp"
             android:layout_height="20dp"
             android:layout_marginStart="8dp"
