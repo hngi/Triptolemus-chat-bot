@@ -11,7 +11,9 @@
         android:supportsRtl="true"
 
         android:theme="@style/AppTheme">
-        <activity android:name=".ChatActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".ChatActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".OnBoardingActivity"
             android:theme="@style/AppTheme.NoActionBar" />
