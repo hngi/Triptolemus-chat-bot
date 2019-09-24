@@ -1,5 +1,6 @@
 package com.triptolemus.hngchatbot
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -18,5 +19,10 @@ class ChatActivity : AppCompatActivity(), View.OnClickListener {
         if (item!!.id == R.id.backButton){
             onBackPressed()
         }
+    }
+
+    private fun backToOnBoarding(view: View){
+        val intent = Intent(this, OnBoardingActivity::class.java)
+        startActivity(intent)
     }
 }
