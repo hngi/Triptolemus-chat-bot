@@ -35,11 +35,21 @@ class ChatAdapter(private val chat: List<Model.ChatMessage>) : RecyclerView.Adap
                 botTimeStampText.visibility = View.GONE
                 botLayout.visibility = View.GONE
                 userChatText.text = chat.msgText
+                if (chat.msgTime.isNotEmpty()) {
+                    userTimeStampText.text = chat.msgTime
+                } else{
+                    userTimeStampText.visibility = View.GONE
+                }
             } else{
                 userChatText.visibility = View.GONE
                 userTimeStampText.visibility = View.GONE
                 userLayout.visibility = View.GONE
                 botChatText.text = chat.msgText
+                if (chat.msgTime.isNotEmpty()) {
+                    botTimeStampText.text = chat.msgTime
+                } else{
+                    botTimeStampText.visibility = View.GONE
+                }
             }
         }
     }
