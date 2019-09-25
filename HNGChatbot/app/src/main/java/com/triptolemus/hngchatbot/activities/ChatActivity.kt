@@ -13,8 +13,6 @@ import ai.api.android.AIDataService
 import ai.api.android.AIService
 import ai.api.model.AIRequest
 import ai.api.model.AIResponse
-import android.app.Activity
-import android.content.Context
 import android.os.AsyncTask
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -40,8 +38,8 @@ class ChatActivity : AppCompatActivity(), View.OnClickListener {
         sendButton.setOnClickListener(this)
         initAI()
 
-        /*val username = intent.getStringExtra("username")
-        welcomeTextview.text = username*/
+        val username = intent.getStringExtra("username")
+        performInteraction(username!!)
     }
 
     private fun initAI(){
