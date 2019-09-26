@@ -7,6 +7,7 @@ import android.content.IntentFilter
 import android.net.ConnectivityManager
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toast
@@ -19,14 +20,11 @@ import com.google.auth.oauth2.GoogleCredentials
 import com.google.auth.oauth2.ServiceAccountCredentials
 import com.google.cloud.dialogflow.v2.*
 import com.triptolemus.hngchatbot.ChatAdapter
-import com.triptolemus.hngchatbot.R
 import com.triptolemus.hngchatbot.RequestBotAsyncTask
 import com.triptolemus.hngchatbot.model.Model
-import kotlinx.android.synthetic.main.activity_chat.*
 import com.triptolemus.hngchatbot.room.HNGChatbotDatabaseConnection
 import com.triptolemus.hngchatbot.room.entities.ChatEntity
 import io.reactivex.Completable
-import io.reactivex.CompletableObserver
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.observers.DisposableCompletableObserver
@@ -164,10 +162,6 @@ class ChatActivity : AppCompatActivity(), View.OnClickListener {
                     }
                 }
             }
-            //chats.add(chat)
-            //chatContainer.adapter!!.notifyItemInserted(chatContainer.adapter!!.itemCount)
-            //chatContainer.scrollToPosition(chatContainer.adapter!!.itemCount - 1)
-
         }
     }
 
@@ -233,7 +227,6 @@ class ChatActivity : AppCompatActivity(), View.OnClickListener {
 
                 override fun onError(e: Throwable) {
                     complete(false)
-                    //Toast.makeText(this@ChatActivity, e.message.toString(), Toast.LENGTH_LONG).show()
                 }
             })
     }
@@ -266,9 +259,6 @@ class ChatActivity : AppCompatActivity(), View.OnClickListener {
 
             }
         }
-        //chats.add(chat)
-        //chatContainer.adapter!!.notifyItemInserted(chatContainer.adapter!!.itemCount)
-        //chatContainer.scrollToPosition(chatContainer.adapter!!.itemCount - 1)
     }
 
     private val broadcastReceiver: BroadcastReceiver = object : BroadcastReceiver(){
