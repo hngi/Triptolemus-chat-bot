@@ -99,4 +99,22 @@
         app:layout_constraintTop_toBottomOf="@+id/titleBar"
         tools:listitem="@layout/chatbot_bubble_chat" />
 
+    <TextView
+        android:id="@+id/internetNotice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/network_failure"
+        android:textAlignment="center"
+        android:textColor="@color/mainTextColor"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/messageEdittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleBar"
+        tools:visibility="visible" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

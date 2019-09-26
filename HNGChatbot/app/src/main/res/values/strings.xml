@@ -8,4 +8,5 @@
     <string name="user_msg">User message</string>
     <string name="bot_msg">Bot message</string>
     <string name="timestamp_msg">12:00 am</string>
+    <string name="network_failure">Oops! You seem not to have an Internet connection.</string>
 </resources>
