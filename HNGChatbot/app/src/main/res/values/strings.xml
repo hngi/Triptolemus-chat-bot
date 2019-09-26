@@ -8,4 +8,9 @@
     <string name="user_msg">User message</string>
     <string name="bot_msg">Bot message</string>
     <string name="timestamp_msg">12:00 am</string>
+    <string name="network_failure">Oops! You seem not to have an Internet connection.</string>
+    <string name="continue_prompt">Do you want to enable data connection?</string>
+    <string name="cancel">Cancel</string>
+    <string name="open_network_settings">Open Network Settings</string>
+    <string name="enter_username">Please enter a name</string>
 </resources>
